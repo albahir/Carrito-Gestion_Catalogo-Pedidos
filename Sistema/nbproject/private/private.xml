@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/Producto.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/Cliente.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/DetalleCompra.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/Pedido.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/GestionProducto.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/Busqueda.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/GestionCliente.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/GestionPedidos.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/FrmMenuPrincipal.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/Main.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/Tema.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/PanelCatalogo.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/PanelCarrito.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/DialogoCliente.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/Configuracion.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/MensajesUI.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/DialogoIdentificarCliente.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/PanelFormulario.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Controladores/ControladorInventario.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/TarjetaProducto.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Controladores/ControladorVenta.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/PanelRedondeado.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/Validaciones.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/ImagenUtils.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/UIFabric.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/Formato.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/DialogoResumenPedido.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/descuentos/ReglaDescuento.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/descuentos/ReglaVolumen.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/descuentos/ReglaFidelidad.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/PedidoBuilder.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/test/PruebasIntegracion.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/PanelHistorial.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/DialogoPago.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/ArchivoHelper.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/repositorio/RepositorioPedidosTXT.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/repositorio/RepositorioClienteTXT.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/repositorio/RepositorioProductoTXT.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/repositorio/RepositorioConfiguracionTXT.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/AlmacenamientoPedidos.java</file>
+        </group>
+    </open-files>
+</project-private>

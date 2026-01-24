@@ -1,0 +1,89 @@
+1;VIV-001;Harina de Maíz P.A.N.;Harina de maíz blanco precocida<br>Ideal para arepas;Víveres;1.2;100;2025-10-01;true;;false;0.0;true;20;5.0;null
+2;VIV-002;Arroz Primor Clásico;Arroz blanco de grano largo<br>Tipo I;Víveres;1.1;80;2025-10-05;true;;false;0.0;true;12;3.0;null
+3;VIV-003;Pasta Capri Corta;Pasta alimenticia de sémola<br>Presentación 500g;Víveres;0.9;150;2025-10-10;true;;false;0.0;false;0;0.0;null
+4;VIV-004;Azúcar Montalbán;Azúcar refinada de alta pureza<br>Empaque 1kg;Víveres;1.3;60;2025-10-12;true;;false;0.0;true;10;2.0;null
+6;VIV-006;Sal Bahía;Sal refinada con flúor<br>Bolsa 1kg;Víveres;0.5;200;2025-10-18;true;;false;0.0;false;0;0.0;null
+7;VIV-007;Café Fama de América;Café tostado y molido<br>Sabor intenso 250g;Víveres;3.8;30;2025-10-20;true;;false;0.0;false;0;0.0;null
+8;VIV-008;Lentejas Mary;Granos seleccionados<br>Paquete 500g;Víveres;1.6;0;2025-10-22;true;;false;0.0;false;0;0.0;null
+9;VIV-009;Caraotas Negras Pantera;Granos negros tipo I<br>Paquete 500g;Víveres;1.8;45;2025-10-25;true;;false;0.0;true;6;4.0;null
+10;VIV-010;Mayonesa Mavesa;Aderezo de mayonesa<br>Envase 445g;Víveres;2.9;55;2025-10-28;true;;false;0.0;false;0;0.0;null
+11;BEB-001;Coca-Cola Sabor Original;Refresco carbonatado<br>Botella 2 Litros;Bebidas;2.2;119;2025-11-01;true;;true;1.8;true;6;8.0;2026-03-15T18:00
+12;BEB-002;Pepsi Cola;Refresco carbonatado<br>Botella 2 Litros;Bebidas;2.0;100;2025-11-02;true;;false;0.0;true;6;5.0;null
+13;BEB-003;Jugo de Naranja Yukery;Néctar de fruta pasteurizado<br>Botella 1.5L;Bebidas;3.5;40;2025-11-05;true;;false;0.0;false;0;0.0;null
+14;BEB-004;Agua Mineral Minalba;Agua pura de manantial<br>Botella 5L;Bebidas;1.5;60;2025-11-08;true;;false;0.0;true;4;10.0;null
+15;BEB-005;Malta Polar;Bebida de malta sin alcohol<br>Botella PET 1.5L;Bebidas;1.8;90;2025-11-10;true;;false;0.0;true;12;6.0;null
+16;BEB-006;Gatorade Fruit Punch;Bebida isotónica hidratante<br>Botella 500ml;Bebidas;1.2;50;2025-11-12;true;;false;0.0;false;0;0.0;null
+17;BEB-007;Té Lipton Durazno;Bebida de té helado<br>Botella 1.5L;Bebidas;2.8;35;2025-11-15;true;;false;0.0;false;0;0.0;null
+18;BEB-008;Chinotto;Refresco sabor limón<br>Botella 2 Litros;Bebidas;2.0;0;2025-11-18;true;;false;0.0;false;0;0.0;null
+19;BEB-009;Soda en Lata;Agua carbonatada<br>Lata 355ml;Bebidas;0.8;20;2025-11-20;true;;false;0.0;true;24;15.0;null
+20;BEB-010;Energizante Red Bull;Bebida energética<br>Lata 250ml;Bebidas;2.5;40;2025-11-22;true;;true;2.0;false;0;0.0;2026-02-10T12:00
+21;REF-001;Mantequilla Mavesa;Margarina con sal<br>Envase 500g;Refrigerados;2.5;80;2025-12-01;true;;false;0.0;true;12;5.0;null
+22;REF-002;Yogurt Migurt Fresa;Yogurt batido con frutas<br>Envase 750g;Refrigerados;3.2;25;2025-12-03;true;;false;0.0;false;0;0.0;null
+23;REF-003;Leche Líquida Complete;Leche completa larga duración<br>Cartón 1L;Refrigerados;1.9;100;2025-12-05;true;;false;0.0;true;12;8.0;null
+24;REF-004;Natilla Criolla;Natilla suave pasteurizada<br>Envase 250g;Refrigerados;1.5;20;2025-12-08;true;;false;0.0;false;0;0.0;null
+25;REF-005;Suero de Leche;Suero criollo líquido<br>Botella 500ml;Refrigerados;1.2;15;2025-12-10;true;;false;0.0;false;0;0.0;null
+26;REF-006;Crema de Leche;Crema espesa para cocinar<br>Lata 295g;Refrigerados;2.8;30;2025-12-12;true;;false;0.0;false;0;0.0;null
+27;REF-007;Gelatina Golden;Gelatina lista para comer<br>Vaso individual;Refrigerados;0.6;50;2025-12-15;true;;false;0.0;true;10;10.0;null
+28;REF-008;Queso Crema Philadelphia;Queso untable original<br>Barra 220g;Refrigerados;4.5;0;2025-12-18;true;;false;0.0;false;0;0.0;null
+29;REF-009;Ricotta Fresca;Queso ricotta bajo en sal<br>Envase 250g;Refrigerados;2.2;12;2025-12-20;true;;false;0.0;false;0;0.0;null
+30;REF-010;Chicha Líquida El Chichero;Bebida de arroz y leche<br>Cartón 1L;Refrigerados;2.1;0;2025-12-22;false;;true;1.51;true;6;5.0;2026-03-01T10:00
+31;CHA-001;Jamón de Pierna Plumrose;Jamón cocido superior<br>Venta por Kg;Charcutería;9.5;15;2026-01-01;true;;false;0.0;false;0;0.0;null
+32;CHA-002;Queso Amarillo Gouda;Queso madurado importado<br>Venta por Kg;Charcutería;12.0;10;2026-01-02;true;;true;10.5;false;0;0.0;2026-02-15T15:00
+33;CHA-003;Queso Blanco Duro;Queso llanero rallar<br>Venta por Kg;Charcutería;5.5;25;2026-01-03;true;;false;0.0;true;3;5.0;null
+34;CHA-004;Salchicha Wiener;Salchicha tipo polaca<br>Paquete 500g;Charcutería;3.8;30;2026-01-05;true;;false;0.0;false;0;0.0;null
+35;CHA-005;Mortadela Tapara;Mortadela especial de carne<br>Pieza 500g;Charcutería;2.5;40;2026-01-08;true;;false;0.0;false;0;0.0;null
+36;CHA-006;Tocineta Ahumada;Tocineta rebanada selecta<br>Paquete 250g;Charcutería;4.2;20;2026-01-10;true;;false;0.0;false;0;0.0;null
+37;CHA-007;Jamón de Pavo;Pechuga de pavo cocida<br>Venta por Kg;Charcutería;8.9;12;2026-01-12;true;;false;0.0;false;0;0.0;null
+38;CHA-008;Chorizo de Ajo;Chorizo parrillero<br>Paquete 500g;Charcutería;4.5;0;2026-01-15;true;;false;0.0;false;0;0.0;null
+39;CHA-009;Salchichón Cervezero;Embutido madurado<br>Barra entera;Charcutería;6.0;18;2026-01-18;true;;false;0.0;false;0;0.0;null
+40;CHA-010;Pepperoni Rebanado;Ideal para pizzas<br>Paquete 100g;Charcutería;3.0;25;2026-01-20;true;;false;0.0;false;0;0.0;null
+41;CAR-001;Bistec de Solomo;Corte de carne de primera<br>Precio por Kg;Carnicería;7.5;20;2026-01-05;true;;false;0.0;false;0;0.0;null
+42;CAR-002;Carne Molida;Carne de res magra molida<br>Precio por Kg;Carnicería;6.2;30;2026-01-06;true;;false;0.0;true;3;5.0;null
+43;CAR-003;Pollo Entero Beneficiado;Pollo fresco con menudencias<br>Precio por Kg;Carnicería;2.8;50;2026-01-08;true;;true;2.2;true;5;10.0;2026-02-20T20:00
+44;CAR-004;Pechuga de Pollo;Milanesa de pollo sin hueso<br>Precio por Kg;Carnicería;5.5;25;2026-01-10;true;;false;0.0;false;0;0.0;null
+45;CAR-005;Muslos de Pollo;Muslos enteros con piel<br>Precio por Kg;Carnicería;3.2;35;2026-01-12;true;;false;0.0;false;0;0.0;null
+46;CAR-006;Chuleta Ahumada;Chuleta de cerdo ahumada<br>Precio por Kg;Carnicería;8.0;15;2026-01-15;true;;false;0.0;false;0;0.0;null
+47;CAR-007;Costilla de Res;Costilla con hueso para sopa<br>Precio por Kg;Carnicería;4.5;18;2026-01-18;true;;false;0.0;false;0;0.0;null
+48;CAR-008;Solomo de Cuerito;Corte parrillero<br>Precio por Kg;Carnicería;8.5;0;2026-01-20;true;;false;0.0;false;0;0.0;null
+49;CAR-009;Lagarto con Hueso;Ideal para sopas<br>Precio por Kg;Carnicería;3.8;10;2026-01-22;true;;false;0.0;false;0;0.0;null
+50;CAR-010;Carne para Mechar;Falda de res limpia<br>Precio por Kg;Carnicería;6.8;22;2026-01-25;true;;false;0.0;false;0;0.0;null
+51;SNA-001;Papas Lays Clásicas;Papas fritas con sal<br>Bolsa Grande 150g;Snacks;2.5;40;2026-01-10;true;;false;0.0;true;3;5.0;null
+52;SNA-002;Doritos Mega Queso;Tortillas de maíz sabor queso<br>Bolsa Grande 140g;Snacks;2.5;35;2026-01-12;true;;false;0.0;false;0;0.0;null
+53;SNA-003;Pepito Sabor Queso;Extruido de maíz<br>Bolsa 120g;Snacks;1.8;50;2026-01-15;true;;false;0.0;true;5;10.0;null
+54;SNA-004;Galletas Oreo;Galleta sandwich chocolate<br>Tubo 108g;Snacks;1.2;60;2026-01-18;true;;false;0.0;true;6;8.0;null
+55;SNA-005;Chocolate Savoy de Leche;Barra de chocolate<br>Tableta 130g;Snacks;2.2;45;2026-01-20;true;;true;1.8;false;0;0.0;2026-02-14T23:59
+56;SNA-006;Susy Galleta;Galleta rellena tipo wafer<br>Paquete 50g;Snacks;0.8;80;2026-01-22;true;;false;0.0;true;12;15.0;null
+57;SNA-007;Cocosette;Galleta wafer sabor coco<br>Paquete 50g;Snacks;0.8;75;2026-01-25;true;;false;0.0;true;12;15.0;null
+58;SNA-008;Maní Salado;Maní frito con sal<br>Bolsita 40g;Snacks;0.5;100;2026-01-28;true;;false;0.0;false;0;0.0;null
+59;SNA-009;Platanitos Dulces;Chips de plátano maduro<br>Bolsa 80g;Snacks;1.5;30;2026-01-30;true;;false;0.0;false;0;0.0;null
+60;SNA-010;Cheese Tris;Palitos de maíz con queso<br>Bolsa 150g;Snacks;1.8;0;2026-02-01;true;;false;0.0;false;0;0.0;null
+61;ENL-001;Atún Margarita;Lomo de atún en aceite<br>Lata 140g;Enlatados;1.9;60;2026-01-05;true;;false;0.0;true;6;5.0;null
+62;ENL-002;Sardinas en Tomate;Sardinas frescas en salsa<br>Lata 170g;Enlatados;0.9;80;2026-01-08;true;;false;0.0;true;10;10.0;null
+63;ENL-003;Maíz Dulce Jojoto;Granos de maíz enteros<br>Lata 250g;Enlatados;1.5;45;2026-01-10;true;;false;0.0;false;0;0.0;null
+64;ENL-004;Guisantes Verdes;Petit pois al natural<br>Lata 200g;Enlatados;1.2;30;2026-01-12;true;;false;0.0;false;0;0.0;null
+65;ENL-005;Champignones Rebanados;Hongos en salmuera<br>Lata 200g;Enlatados;2.2;25;2026-01-15;true;;false;0.0;false;0;0.0;null
+66;ENL-006;Salsa de Tomate Ketchup;Salsa condimentada<br>Botella 397g;Enlatados;2.5;50;2026-01-18;true;;true;1.9;false;0;0.0;2026-03-30T12:00
+67;ENL-007;Melocotones en Almíbar;Mitades de melocotón<br>Lata 820g;Enlatados;4.5;15;2026-01-20;true;;false;0.0;false;0;0.0;null
+68;ENL-008;Diablito Underwood;Jamón endiablado untable<br>Lata 115g;Enlatados;1.8;70;2026-01-22;true;;false;0.0;true;6;5.0;null
+69;ENL-009;Frijoles Refritos;Frijoles negros listos<br>Lata 400g;Enlatados;1.6;0;2026-01-25;true;;false;0.0;false;0;0.0;null
+70;ENL-010;Tomates Pelados;Tomates enteros en jugo<br>Lata 400g;Enlatados;1.4;20;2026-01-28;true;;false;0.0;false;0;0.0;null
+71;PAN-001;Pan Canilla;Pan blanco tipo baguette<br>Unidad fresca;Panadería;0.5;100;2026-02-01;true;;false;0.0;true;5;10.0;null
+72;PAN-002;Pan Campesino;Pan de corteza crujiente<br>Unidad grande;Panadería;1.2;50;2026-02-01;true;;false;0.0;false;0;0.0;null
+73;PAN-003;Pan de Jamón;Tradicional con pasas y aceitunas<br>Unidad 800g;Panadería;12.0;10;2026-02-01;true;;false;0.0;false;0;0.0;null
+74;PAN-004;Torta de Chocolate;Rellena con ganache<br>Porción individual;Panadería;3.5;15;2026-02-01;true;;true;2.5;false;0;0.0;2026-02-05T18:00
+75;PAN-005;Croissant de Mantequilla;Hojaldre horneado<br>Unidad;Panadería;1.0;30;2026-02-01;true;;false;0.0;true;6;10.0;null
+76;PAN-006;Pan Dulce Andino;Con anís y azúcar<br>Paquete 4 unidades;Panadería;2.0;20;2026-02-01;true;;false;0.0;false;0;0.0;null
+77;PAN-007;Cachitos de Jamón;Rellenos de jamón ahumado<br>Unidad;Panadería;1.5;40;2026-02-01;true;;false;0.0;true;6;5.0;null
+78;PAN-008;Donas Glaseadas;Rosquillas fritas dulces<br>Unidad;Panadería;0.8;0;2026-02-01;true;;false;0.0;false;0;0.0;null
+79;PAN-009;Pan de Hamburguesa;Con ajonjolí<br>Paquete 8 unidades;Panadería;3.0;25;2026-02-01;true;;false;0.0;false;0;0.0;null
+80;PAN-010;Pan de Perro Caliente;Suave y esponjoso<br>Paquete 10 unidades;Panadería;2.8;25;2026-02-01;true;;false;0.0;false;0;0.0;null
+81;LIM-001;Detergente en Polvo;Multiusos con aroma floral<br>Bolsa 1Kg;Limpieza;3.5;50;2026-01-10;true;;false;0.0;true;3;5.0;null
+82;LIM-002;Lavaplatos Líquido;Arranca grasa limón<br>Botella 500ml;Limpieza;1.8;0;2026-01-12;false;;true;1.21;true;3;5.0;2026-03-01T00:00
+83;LIM-003;Cloro Blanqueador;Desinfectante concentrado<br>Galón 3.7L;Limpieza;4.5;20;2026-01-15;true;;false;0.0;false;0;0.0;null
+84;LIM-004;Desinfectante Lavanda;Limpiador de pisos<br>Botella 1L;Limpieza;1.5;40;2026-01-18;true;;false;0.0;true;4;10.0;null
+85;LIM-005;Jabón de Tocador;Pack familiar<br>3 unidades de 100g;Limpieza;2.2;35;2026-01-20;true;;false;0.0;false;0;0.0;null
+86;LIM-006;Papel Higiénico;Doble hoja suave<br>Paquete 4 rollos;Limpieza;2.8;50;2026-01-22;true;;false;0.0;true;2;5.0;null
+87;LIM-007;Esponja Doble Uso;Fibra verde y amarilla<br>Paquete 3 unidades;Limpieza;1.0;60;2026-01-25;true;;false;0.0;false;0;0.0;null
+88;LIM-008;Suavizante de Ropa;Aroma bebé<br>Botella 1L;Limpieza;2.5;30;2026-01-28;true;;false;0.0;false;0;0.0;null
+89;LIM-009;Insecticida en Spray;Mata moscas y mosquitos<br>Lata 400ml;Limpieza;3.8;25;2026-02-01;true;;false;0.0;false;0;0.0;null
+90;LIM-010;Limpiavidrios;Con atomizador<br>Botella 500ml;Limpieza;2.0;0;2026-02-03;true;;false;0.0;false;0;0.0;null
