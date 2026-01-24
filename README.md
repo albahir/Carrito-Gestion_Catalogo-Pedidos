@@ -47,23 +47,23 @@ javac -d build src/**/*.java
 4. Ejecución ▶️
 Localiza la clase principal (Main.java) dentro del paquete de vistas y ejecútala (Clic derecho -> Run File).
 
-📦 Estructura del Proyecto
+##📦 Estructura del Proyecto
 El código sigue una arquitectura por capas para separar responsabilidades:
 
-🗂️ Modelo (EntidadesCatalogo): Clases del dominio como Producto, Cliente y Pedido.
+##🗂️ Modelo (EntidadesCatalogo): Clases del dominio como Producto, Cliente y Pedido.
 
-🗄️ Datos (AcccesoDatosCatalogo): Lógica de negocio y repositorios TXT (RepositorioPedidosTXT, etc.).
+##🗄️ Datos (AcccesoDatosCatalogo): Lógica de negocio y repositorios TXT (RepositorioPedidosTXT, etc.).
 
-🎮 Controladores: Intermediarios como ControladorVenta.
+##🎮 Controladores: Intermediarios como ControladorVenta.
 
-🎨 Vistas (VistasCatalogo): Interfaz gráfica Swing (PanelCarrito, DialogoPago, etc.).
+##🎨 Vistas (VistasCatalogo): Interfaz gráfica Swing (PanelCarrito, DialogoPago, etc.).
 
-🛠️ Utilidades: Herramientas transversales y componentes visuales (UIFabric).
+##🛠️ Utilidades: Herramientas transversales y componentes visuales (UIFabric).
 
-🚀 Uso Básico
+##🚀 Uso Básico
 Inicio: Al abrir la app, se cargarán automáticamente los datos desde productos.txt y clientes.txt.
 
-Identificación: 👤 El sistema pedirá la cédula del cliente. Si no existe, se abrirá el DialogoCliente para registrarlo.
+##Identificación: 👤 El sistema pedirá la cédula del cliente. Si no existe, se abrirá el DialogoCliente para registrarlo.
 
 Carrito de Compras: 🛒
 
@@ -88,4 +88,4 @@ Finalización: 🧾 Se genera un comprobante digital y la transacción se guarda
 
 🗄️ Base de Datos: No requiere MySQL ni PostgreSQL. Todo es portable.
 
-Desarrollado en Java Swing
+* Desarrollado en Java Swing
