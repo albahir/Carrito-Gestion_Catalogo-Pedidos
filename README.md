@@ -1,15 +1,13 @@
 # 🛒 Sistema de Gestión de Carrito y Catálogo (POS)
 
-![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=java&logoColor=white) 
-![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white) 
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)
 ![Status](https://img.shields.io/badge/Estado-Terminado-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-<<<<<<< HEAD
-=======
-Este proyecto es una aplicación de escritorio robusta desarrollada en **Java Swing** que implementa un sistema de Punto de Venta (POS).  
-Permite la gestión integral de un catálogo de productos, control de inventario en tiempo real, administración de clientes, procesamiento de carritos de compras y un registro histórico detallado de pedidos.
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
-
+</div>
 
 ## Java NetBeans Status
 
@@ -18,25 +16,24 @@ Permite la gestión integral de un catálogo de productos, control de inventario
 
 > **Nota:** La persistencia de datos se maneja mediante almacenamiento en archivos de texto (.txt), lo que facilita su despliegue inmediato sin necesidad de configurar bases de datos complejas.
 
+### ✨ Características Clave
+* 📦 **Gestión de Catalogo:** Control de stock en tiempo real con validaciones.
+* 📈 **Estrategias de Marketing:** Configuración de **Ofertas Flash** (con temporizador) y **Precios Mayoristas** desde el panel administrativo.
+* 🛒 **Carrito Dinámico:** Cálculo automático de totales e impuestos.
+* 💳 **Múltiples Métodos de Pago:** Zelle, Pago Móvil, Efectivo y Punto de Venta.
+* 📸 **Snapshots de Precios:** Guarda el precio histórico del producto al momento de la venta.
+* 🧾 **Comprobantes Digitales:** Generación de resumen de pedido.
+
 ---
 
 ## 📋 Requisitos Previos
 
 Para ejecutar y compilar este proyecto, asegúrate de contar con lo siguiente en tu entorno:
 
-<<<<<<< HEAD
 - ☕ Java Development Kit (JDK): Versión 17 o superior.
 - 💻 IDE Recomendado: NetBeans (estructura nativa detectada), IntelliJ IDEA o Eclipse.
 - 🐙 Control de Versiones: Git.
-- 🛠️ Sistema de Construcción: Herramientas estándar (Ant, Maven o Gradle) según tu configuración local.
-=======
-* ☕ **Java Development Kit (JDK):** Versión 17 o superior.  
-* 💻 **IDE Recomendado:** NetBeans (estructura nativa detectada), IntelliJ IDEA o Eclipse.  
-* 🐙 **Control de Versiones:** Git.  
-* 🛠️ **Sistema de Construcción:** Herramientas estándar (Ant, Maven o Gradle) según tu configuración local.  
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
 
----
 
 ## ⚙️ Instalación y Configuración
 
@@ -45,20 +42,10 @@ Para ejecutar y compilar este proyecto, asegúrate de contar con lo siguiente en
 Abre tu terminal y ejecuta:
 
 ```bash
-git clone https://github.com/albahir/Carrito-Gesti-n_Catalogo-Pedidos
+git clone https://github.com/albahir/Carrito-Gesti-n_Catalogo-Pedidos.git
 cd sistema-catalogo
-<<<<<<< HEAD
 ```
-=======
-###2. Importar en el IDE
-En NetBeans / IntelliJ / Eclipse:
 
-Selecciona File > Open Project (o Import)
-
-Navega hasta la carpeta raíz clonada.
-
-El IDE detectará automáticamente la carpeta src.
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
 
 ### 2. Importar en el IDE
 
@@ -70,7 +57,6 @@ En NetBeans / IntelliJ / Eclipse:
 
 ### 3. Compilación
 
-<<<<<<< HEAD
 **Desde el IDE:**
 - Haz clic derecho sobre el proyecto.
 - Selecciona `Clean and Build` (Limpiar y Construir).
@@ -85,83 +71,82 @@ javac -d build src/**/*.java
 Localiza la clase principal `Main.java` dentro del paquete de vistas y ejecútala:
 - Clic derecho → `Run File`.
 
----
+
 
 ## 📦 Estructura del Proyecto
-=======
-bash
-javac -d build src/**/*.java
-4. Ejecución ▶️
-Localiza la clase principal Main.java dentro del paquete de vistas y ejecútala:
+```
+sistema-catalogo/
+├── src/
+│   ├── AcccesoDatosCatalogo/   # Lógica de negocio y persistencia (.txt)
+│   ├── Controladores/          # Puentes entre Vista y Modelo
+│   ├── EntidadesCatalogo/      #  Producto, Cliente, Pedido, Configuracion, DetalleCompra, PedidoBuilder
+│   ├── Utilidades/             # Herramientas (UIFabric, Formatos)
+│   └── VistasCatalogo/         # Paneles y Dialogos de la Interfaz en Swing
+├── productos.txt               # Base de datos plana
+├── clientes.txt                # Base de datos plana
+└── README.md
+```
 
-Clic derecho → Run File.
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
+## 🚀 Guía de Uso Paso a Paso
 
-El código sigue una arquitectura por capas para separar responsabilidades:
+### 1. Gestión de Inventario (Admin)
+Antes de vender, el sistema permite administrar el catálogo desde el `PanelFormulario`.
 
-- 🗂️ Modelo (EntidadesCatalogo): Clases del dominio como Producto, Cliente y Pedido.
-- 🗄️ Datos (AcccesoDatosCatalogo): Lógica de negocio y repositorios TXT (RepositorioPedidosTXT, etc.).
-- 🎮 Controladores: Intermediarios como ControladorVenta.
-- 🎨 Vistas (VistasCatalogo): Interfaz gráfica Swing (PanelCarrito, DialogoPago, etc.).
-- 🛠️ Utilidades: Herramientas transversales y componentes visuales (UIFabric).
+* **Carga de Productos:** Ingresa nombre, precio base y stock inicial.
+* **Imágenes:** Puedes subir fotos arrastrándolas al recuadro o haciendo clic (Drag & Drop).
+* **Estrategias de Precio:**
+    * ⚡ **Oferta Flash:** Activa descuentos por tiempo limitado.
+    * 📦 **Mayorista:** Configura descuentos automáticos por volumen (Ej: "Lleva 6 y ahorra 10%").
 
----
-
-## 🚀 Uso Básico
-
-### Inicio
-
-Al abrir la app, se cargarán automáticamente los datos desde `productos.txt` y `clientes.txt`.
-
-### Identificación 👤
-
-<<<<<<< HEAD
-El sistema pedirá la cédula del cliente. Si no existe, se abrirá el DialogoCliente para registrarlo.
-
-### Carrito de Compras 🛒
-=======
-Identificación 👤: El sistema pedirá la cédula del cliente. Si no existe, se abrirá el DialogoCliente para registrarlo.
-
-Carrito de Compras 🛒:
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
-
-- Navega por el catálogo y agrega productos.
-- Usa el PanelCarrito para modificar cantidades.
-- El stock se valida en tiempo real.
-
-### Pago 💳
-
-<<<<<<< HEAD
-- Haz clic en Confirmar Pago.
-- Selecciona el método: Zelle, Pago Móvil, Efectivo o Punto de Venta.
-- Ingresa las referencias bancarias necesarias.
-=======
-Pago 💳:
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
-
-### Finalización 🧾
-
-- Se genera un comprobante digital y la transacción se guarda en el Historial.
+![Vista Formulario](https://via.placeholder.com/800x400?text=Tu+Captura+del+PanelFormulario+Aqui)
+> *Panel de gestión con configuración de ofertas y carga de imágenes.*
 
 ---
 
-<<<<<<< HEAD
+### 2. Identificación del Cliente
+Al iniciar una venta, el sistema solicita la cédula.
+* Si el cliente existe, carga sus datos.
+* Si es nuevo, despliega el formulario de registro (`DialogoCliente`) con validaciones de teléfono y correo.
+
+![Vista Cliente](https://via.placeholder.com/800x200?text=Tu+Captura+del+DialogoCliente+Aqui)
+
+---
+
+### 3. Proceso de Venta (Carrito)
+Navega por el catálogo visual. Los productos muestran etiquetas inteligentes (**"Agotado"**, **"Oferta -20%"**, **"Mayorista x6"**).
+* Agrega productos al carrito.
+* Ajusta cantidades (el sistema valida el stock disponible en tiempo real).
+
+![Vista Catalogo](https://via.placeholder.com/800x400?text=Tu+Captura+del+Catalogo+y+Carrito+Aqui)
+
+---
+
+### 4. Procesamiento del Pago
+Al confirmar, selecciona el método de pago preferido:
+* **Zelle / Pago Móvil:** Requiere validación de referencia.
+* **Punto de Venta / Efectivo:** Flujos simplificados.
+
+![Vista Pago](https://via.placeholder.com/800x400?text=Tu+Captura+del+DialogoPago+Aqui)
+
+---
+
+### 5. Comprobante y Historial
+Al finalizar, se genera un ticket digital detallando:
+* Items comprados.
+* Descuentos aplicados (Ahorro total).
+* Datos fiscales de la empresa y cliente.
+
+![Vista Recibo](https://via.placeholder.com/400x600?text=Tu+Captura+del+Recibo+Aqui)
+
+---
+
+
 ## 📝 Notas Adicionales
-=======
-Finalización 🧾: Se genera un comprobante digital y la transacción se guarda en el Historial.
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
-
 - ⚠️ Permisos: Asegúrate de que la carpeta del proyecto tenga permisos de Lectura/Escritura, ya que la app necesita crear y modificar los archivos `.txt`.
 - 📸 Snapshots: El sistema guarda una "foto instantánea" de los precios y nombres de los productos al momento de la venta. Esto garantiza que el historial no se altere si cambias el catálogo en el futuro.
 - 🗄️ Base de Datos: No requiere MySQL ni PostgreSQL. Todo es portable.
+
+👤 Autor
+- Desarrollado por Manuel Rodriguez/albahir.
 - 👨‍💻 Desarrollado en Java Swing.
 
-<<<<<<< HEAD
----
-=======
-📸 Snapshots: El sistema guarda una "foto instantánea" de los precios y nombres de los productos al momento de la venta. Esto garantiza que el historial no se altere si cambias el catálogo en el futuro.
-
-🗄️ Base de Datos: No requiere MySQL ni PostgreSQL. Todo es portable.
-
-👨‍💻 Desarrollado en Java Swing
->>>>>>> 15fb204aa34fd76a158b2d77406d89dbcf8cffd9
