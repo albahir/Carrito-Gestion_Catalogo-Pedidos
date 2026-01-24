@@ -30,7 +30,7 @@ Abre tu terminal y ejecuta:
 ```bash
 git clone <URL_DEL_REPOSITORIO>
 cd sistema-catalogo
-2.*Importar en el IDE*
+###2. Importar en el IDE
 En NetBeans / IntelliJ / Eclipse:
 
 Selecciona File > Open Project (o Import)
