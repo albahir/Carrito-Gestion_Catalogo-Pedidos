@@ -98,7 +98,7 @@ Antes de vender, el sistema permite administrar el catálogo desde el `PanelForm
     * ⚡ **Oferta Flash:** Activa descuentos por tiempo limitado.
     * 📦 **Mayorista:** Configura descuentos automáticos por volumen (Ej: "Lleva 6 y ahorra 10%").
 
-![Vista Formulario](https://via.placeholder.com/800x400?text=Tu+Captura+del+PanelFormulario+Aqui)
+![Vista Formulario](captures\Gemini_Generated_Image_9mhgy99mhgy99mhg.png)
 > *Panel de gestión con configuración de ofertas y carga de imágenes.*
 
 ---
