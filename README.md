@@ -20,13 +20,13 @@ Para ejecutar y compilar este proyecto, asegúrate de contar con lo siguiente en
 
 ---
 
+
 ## ⚙️ Instalación y Configuración
 
 Sigue estos pasos para desplegar el proyecto en tu máquina local:
 
 ### 1. Clonar el repositorio
 Abre tu terminal y ejecuta:
-
 ```bash
 git clone <URL_DEL_REPOSITORIO>
 cd sistema-catalogo
@@ -45,29 +45,20 @@ Desde terminal (Manual):
 Bash
 javac -d build src/**/*.java
 4. Ejecución ▶️
-Localiza la clase principal (Main.java) dentro del paquete de vistas y ejecútala.
+Localiza la clase principal (Main.java) dentro del paquete de vistas y ejecútala (Clic derecho -> Run File).
 
 📦 Estructura del Proyecto
 El código sigue una arquitectura por capas para separar responsabilidades:
 
-🗂️ Modelo y Datos
-EntidadesCatalogo: Clases del dominio (Producto, Cliente, Pedido, DetalleCompra).
+🗂️ Modelo (EntidadesCatalogo): Clases del dominio como Producto, Cliente y Pedido.
 
-AcccesoDatosCatalogo: Lógica de negocio y gestores (GestionPedidos, GestionCliente).
+🗄️ Datos (AcccesoDatosCatalogo): Lógica de negocio y repositorios TXT (RepositorioPedidosTXT, etc.).
 
-AcccesoDatosCatalogo.repositorios: Implementación de persistencia en archivos .txt (RepositorioPedidosTXT, etc.).
+🎮 Controladores: Intermediarios como ControladorVenta.
 
-🎮 Control y Vista
-Controladores: Intermediarios como ControladorVenta, que orquesta el flujo entre el carrito y el catálogo.
+🎨 Vistas (VistasCatalogo): Interfaz gráfica Swing (PanelCarrito, DialogoPago, etc.).
 
-VistasCatalogo: Interfaz gráfica Swing.
-
-Paneles: PanelCarrito, PanelHistorial, PanelCatalogo.
-
-Diálogos: DialogoPago, DialogoCliente, DialogoResumenPedido.
-
-🛠️ Soporte
-Utilidades: Herramientas transversales como UIFabric (componentes visuales) y formateadores de moneda.
+🛠️ Utilidades: Herramientas transversales y componentes visuales (UIFabric).
 
 🚀 Uso Básico
 Inicio: Al abrir la app, se cargarán automáticamente los datos desde productos.txt y clientes.txt.
@@ -82,9 +73,9 @@ Usa el PanelCarrito para modificar cantidades. El stock se valida en tiempo real
 
 Pago: 💳
 
-Clic en Confirmar Pago.
+Haz clic en Confirmar Pago.
 
-Selecciona método: Zelle, Pago Móvil, Efectivo o Punto de Venta.
+Selecciona el método: Zelle, Pago Móvil, Efectivo o Punto de Venta.
 
 Ingresa las referencias bancarias necesarias.
 
