@@ -98,7 +98,7 @@ Antes de vender, el sistema permite administrar el catálogo desde el `PanelForm
     * ⚡ **Oferta Flash:** Activa descuentos por tiempo limitado.
     * 📦 **Mayorista:** Configura descuentos automáticos por volumen (Ej: "Lleva 6 y ahorra 10%").
 
-![Vista Catalogo/Gestion](capture/gestionProductos.png)
+![Vista Catalogo/Gestion](capture\gestionProductos.png)
 > *Panel de gestión de productos con configuración de ofertas y carga de imágenes.*
 
 ---
@@ -108,9 +108,10 @@ Al iniciar una venta, el sistema solicita la cédula.
 * Si el cliente existe, carga sus datos.
 * Si es nuevo, despliega el formulario de registro (`DialogoCliente`) con validaciones de teléfono y correo.
 
-![Vista BusquedaCliente](capture/BuscarCliente.png)
+![Vista BusquedaCliente](capture\BuscarCliente.png)
 > *Dialogo de Busqueda  de Clientes con respuesta en tiempo de escritura.*
-![Vista RegistroCliente](capture/RegistroDeCliente.png)
+
+- ![Vista RegistroCliente](capture\RegistroDeCliente.png)
 > *Registro de Cliente con sus validaciones competentes para cada campo.*
 ---
 
@@ -120,7 +121,7 @@ Navega por el catálogo visual. Las tarjetas de productos muestran etiquetas int
 * Ajusta cantidades de productos en el carrito (el sistema valida el stock disponible en tiempo real).
 * Se visualiza precio en dolares y bolivares descuentos aplicados y cupones.
 
-![Vista Catalogo/Carrito](capture/Carrito.png)
+![Vista Catalogo/Carrito](capture\Carrito.png)
 > *Carrito de productos y visualizacion de catalogo y stock en tiempo real.*
 
 ---
@@ -130,7 +131,7 @@ Al confirmar, selecciona el método de pago preferido:
 * **Zelle / Pago Móvil:** Requiere validación de referencia.
 * **Punto de Venta / Efectivo:** Flujos simplificados.
 
-![Vista Pago](capture/DialogoPago.png)
+![Vista Pago](capture\DialogoPago.png)
 > *Vista de diferentes tipos de pago en el que se pueden agregar observaciones*
 
 ---
@@ -141,7 +142,7 @@ Al finalizar, se genera un ticket digital detallando:
 * Descuentos aplicados (Ahorro total).
 * Datos fiscales de la empresa y cliente.
 
-![Vista de pedido](capture/ResumenPedido.png)
+![Vista de pedido](capture\ResumenPedido.png)
 
 ---
 ### 6. Historial
@@ -149,7 +150,7 @@ Viualiza los pedidos realizados detallando:
 * Capturas de datos de ese día.
 * Opcion a visualizar el comprobante del pedido.
 
-![Vista Historial](capture/Historial.png)
+![Vista Historial](capture\Historial.png)
 
 ## 📝 Notas Adicionales
 - ⚠️ Permisos: Asegúrate de que la carpeta del proyecto tenga permisos de Lectura/Escritura, ya que la app necesita crear y modificar los archivos `.txt`.
