@@ -1,13 +1,13 @@
 1;VIV-001;Harina de Maíz P.A.N.;Harina de maíz blanco precocida<br>Ideal para arepas;Víveres;1.2;100;2025-10-01;true;C:\java\Sistema de Catalogo\Productos de comida\Harina pan.jpg;false;1.2;true;20;5.0;null
 2;VIV-002;Arroz Primor Clásico;Arroz blanco de grano largo<br>Tipo I;Víveres;1.1;80;2025-10-05;true;C:\java\Sistema de Catalogo\Productos de comida\Arroz Primor.jpg;false;1.1;true;12;3.0;null
 3;VIV-003;Pasta Capri Corta;Pasta alimenticia de sémola<br>Presentación 500g;Víveres;0.9;150;2025-10-10;true;;false;0.0;false;0;0.0;null
-4;VIV-004;Azúcar Montalbán;Azúcar refinada de alta pureza<br>Empaque 1kg;Víveres;1.3;59;2025-10-12;true;C:\java\Sistema de Catalogo\Productos de comida\Azucar Montalban.jpg;false;1.3;true;10;2.0;null
+4;VIV-004;Azúcar Montalbán;Azúcar refinada de alta pureza<br>Empaque 1kg;Víveres;1.3;58;2025-10-12;true;C:\java\Sistema de Catalogo\Productos de comida\Azucar Montalban.jpg;false;1.3;true;10;2.0;null
 6;VIV-006;Sal Bahía;Sal refinada con flúor<br>Bolsa 1kg;Víveres;0.5;200;2025-10-18;true;;false;0.0;false;0;0.0;null
 7;VIV-007;Café Fama de América;Café tostado y molido<br>Sabor intenso 250g;Víveres;3.8;30;2025-10-20;true;;false;0.0;false;0;0.0;null
 8;VIV-008;Lentejas Mary;Granos seleccionados<br>Paquete 500g;Víveres;1.6;0;2025-10-22;true;;false;0.0;false;0;0.0;null
-9;VIV-009;Caraotas Negras Pantera;Granos negros tipo I<br>Paquete 500g;Víveres;1.8;43;2025-10-25;true;C:\java\Sistema de Catalogo\Productos de comida\Caraotas Negras Pantera.jpg;false;1.8;true;6;4.0;null
+9;VIV-009;Caraotas Negras Pantera;Granos negros tipo I<br>Paquete 500g;Víveres;1.8;36;2025-10-25;true;C:\java\Sistema de Catalogo\Productos de comida\Caraotas Negras Pantera.jpg;false;1.8;true;6;4.0;null
 10;VIV-010;Mayonesa Mavesa;Aderezo de mayonesa<br>Envase 445g;Víveres;2.9;55;2025-10-28;true;;false;0.0;false;0;0.0;null
-11;BEB-001;Coca-Cola Sabor Original;Refresco carbonatado<br>Botella 2 Litros;Bebidas;2.2;119;2025-11-01;true;C:\java\Sistema de Catalogo\Productos de comida\Coca-Cola Sabor Original.jpg;true;1.8;true;6;8.0;2026-03-15T18:00
+11;BEB-001;Coca-Cola Sabor Original;Refresco carbonatado<br>Botella 2 Litros;Bebidas;2.2;118;2025-11-01;true;C:\java\Sistema de Catalogo\Productos de comida\Coca-Cola Sabor Original.jpg;true;1.8;true;6;8.0;2026-03-15T18:00
 12;BEB-002;Pepsi Cola;Refresco carbonatado<br>Botella 2 Litros;Bebidas;2.0;93;2025-11-02;true;C:\java\Sistema de Catalogo\Productos de comida\Pepsi Cola.jpg;false;2.0;true;6;5.0;null
 13;BEB-003;Jugo de Naranja Yukery;Néctar de fruta pasteurizado<br>Botella 1.5L;Bebidas;3.5;40;2025-11-05;true;;false;0.0;false;0;0.0;null
 14;BEB-004;Agua Mineral Minalba;Agua pura de manantial<br>Botella 5L;Bebidas;1.5;60;2025-11-08;true;;false;0.0;true;4;10.0;null
@@ -16,7 +16,7 @@
 17;BEB-007;Té Lipton Durazno;Bebida de té helado<br>Botella 1.5L;Bebidas;2.8;35;2025-11-15;true;;false;0.0;false;0;0.0;null
 18;BEB-008;Chinotto;Refresco sabor limón<br>Botella 2 Litros;Bebidas;2.0;0;2025-11-18;true;;false;0.0;false;0;0.0;null
 19;BEB-009;Soda en Lata;Agua carbonatada<br>Lata 355ml;Bebidas;0.8;20;2025-11-20;true;;false;0.0;true;24;15.0;null
-20;BEB-010;Energizante Red Bull;Bebida energética<br>Lata 250ml;Bebidas;2.5;40;2025-11-22;true;C:\java\Sistema de Catalogo\Productos de comida\Energizante Red Bull.jpg;true;2.0;false;6;0.0;2026-02-10T12:00
+20;BEB-010;Energizante Red Bull;Bebida energética<br>Lata 250ml;Bebidas;2.5;36;2025-11-22;true;C:\java\Sistema de Catalogo\Productos de comida\Energizante Red Bull.jpg;true;2.0;false;6;0.0;2026-02-10T12:00
 21;REF-001;Mantequilla Mavesa;Margarina con sal<br>Envase 500g;Refrigerados;2.5;80;2025-12-01;true;;false;0.0;true;12;5.0;null
 22;REF-002;Yogurt Migurt Fresa;Yogurt batido con frutas<br>Envase 750g;Refrigerados;3.2;25;2025-12-03;true;;false;0.0;false;0;0.0;null
 23;REF-003;Leche Líquida Complete;Leche completa larga duración<br>Cartón 1L;Refrigerados;1.9;100;2025-12-05;true;;false;0.0;true;12;8.0;null
@@ -28,7 +28,7 @@
 29;REF-009;Ricotta Fresca;Queso ricotta bajo en sal<br>Envase 250g;Refrigerados;2.2;12;2025-12-20;true;;false;0.0;false;0;0.0;null
 30;REF-010;Chicha Líquida El Chichero;Bebida de arroz y leche<br>Cartón 1L;Refrigerados;2.1;0;2025-12-22;false;C:\java\Sistema de Catalogo\Productos de comida\Chicha Líquida El Chichero.jpg;true;1.51;true;6;5.0;2026-03-01T10:00
 31;CHA-001;Jamón de Pierna Plumrose;Jamón cocido superior<br>Venta por Kg;Charcutería;9.5;15;2026-01-01;true;;false;0.0;false;0;0.0;null
-32;CHA-002;Queso Amarillo Gouda;Queso madurado importado<br>Venta por Kg;Charcutería;12.0;10;2026-01-02;true;C:\java\Sistema de Catalogo\Productos de comida\Queso Amarillo Gouda.jpg;true;10.56;false;6;0.0;2026-02-15T15:00
+32;CHA-002;Queso Amarillo Gouda;Queso madurado importado<br>Venta por Kg;Charcutería;12.0;9;2026-01-02;true;C:\java\Sistema de Catalogo\Productos de comida\Queso Amarillo Gouda.jpg;true;10.56;false;6;0.0;2026-02-15T15:00
 33;CHA-003;Queso Blanco Duro;Queso llanero rallar<br>Venta por Kg;Charcutería;5.5;25;2026-01-03;true;;false;0.0;true;3;5.0;null
 34;CHA-004;Salchicha Wiener;Salchicha tipo polaca<br>Paquete 500g;Charcutería;3.8;30;2026-01-05;true;;false;0.0;false;0;0.0;null
 35;CHA-005;Mortadela Tapara;Mortadela especial de carne<br>Pieza 500g;Charcutería;2.5;40;2026-01-08;true;;false;0.0;false;0;0.0;null
@@ -39,7 +39,7 @@
 40;CHA-010;Pepperoni Rebanado;Ideal para pizzas<br>Paquete 100g;Charcutería;3.0;25;2026-01-20;true;;false;0.0;false;0;0.0;null
 41;CAR-001;Bistec de Solomo;Corte de carne de primera<br>Precio por Kg;Carnicería;7.5;20;2026-01-05;true;;false;0.0;false;0;0.0;null
 42;CAR-002;Carne Molida;Carne de res magra molida<br>Precio por Kg;Carnicería;6.2;30;2026-01-06;true;;false;0.0;true;3;5.0;null
-43;CAR-003;Pollo Entero Beneficiado;Pollo fresco con menudencias<br>Precio por Kg;Carnicería;2.8;50;2026-01-08;true;C:\java\Sistema de Catalogo\Productos de comida\Pollo Entero Beneficiado.jpg;true;2.21;true;5;10.0;2026-02-20T20:00
+43;CAR-003;Pollo Entero Beneficiado;Pollo fresco con menudencias<br>Precio por Kg;Carnicería;2.8;49;2026-01-08;true;C:\java\Sistema de Catalogo\Productos de comida\Pollo Entero Beneficiado.jpg;true;2.21;true;5;10.0;2026-02-20T20:00
 44;CAR-004;Pechuga de Pollo;Milanesa de pollo sin hueso<br>Precio por Kg;Carnicería;5.5;25;2026-01-10;true;;false;0.0;false;0;0.0;null
 45;CAR-005;Muslos de Pollo;Muslos enteros con piel<br>Precio por Kg;Carnicería;3.2;35;2026-01-12;true;;false;0.0;false;0;0.0;null
 46;CAR-006;Chuleta Ahumada;Chuleta de cerdo ahumada<br>Precio por Kg;Carnicería;8.0;15;2026-01-15;true;;false;0.0;false;0;0.0;null
