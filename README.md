@@ -6,10 +6,29 @@
 ![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)
 ![Status](https://img.shields.io/badge/Estado-Terminado-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/albahir/Carrito-Gestion_Catalogo-Pedidos?style=for-the-badge)
+![Commits](https://img.shields.io/github/commit-activity/m/albahir/Carrito-Gestion_Catalogo-Pedidos?style=for-the-badge)
+
+
 
 </div>
+---
 
-## Java NetBeans Status
+## 📑 Tabla de Contenidos
+- [Demo](#-demo)
+- [Descripción](#-descripción)
+- [Características Clave](#-características-clave)
+- [Requisitos Previos](#-requisitos-previos)
+- [Instalación y Configuración](#instalación-y-configuración)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Guía de Uso Paso a Paso](#-guía-de-uso-paso-a-paso)
+- [Notas Adicionales](#-notas-adicionales)
+- [Autor](#-autor)
+- [Licencia](#-licencia)
+
+---
+
+## 📄 Descripción 
 
 Este proyecto es una aplicación de escritorio robusta desarrollada en Java Swing que implementa un sistema de Punto de Venta (POS).  
 Permite la gestión integral de un catálogo de productos, control de inventario en tiempo real, administración de clientes, procesamiento de carritos de compras y un registro histórico detallado de pedidos.
@@ -35,7 +54,7 @@ Para ejecutar y compilar este proyecto, asegúrate de contar con lo siguiente en
 - 🐙 Control de Versiones: Git.
 
 
-## ⚙️ Instalación y Configuración
+## Instalación y Configuración
 
 ### 1. Clonar el repositorio
 
@@ -69,7 +88,7 @@ javac -d build src/**/*.java
 ### 4. Ejecución ▶️
 
 Localiza la clase principal `Main.java` dentro del paquete de vistas y ejecútala:
-- Clic derecho → `Run File`.
+- Clic derecho → `Run File`(Ejecutar archivo).
 
 
 
@@ -98,7 +117,7 @@ Antes de vender, el sistema permite administrar el catálogo desde el `PanelForm
     * ⚡ **Oferta Flash:** Activa descuentos por tiempo limitado.
     * 📦 **Mayorista:** Configura descuentos automáticos por volumen (Ej: "Lleva 6 y ahorra 10%").
 
-![Vista Catalogo/Gestion](capture\gestionProductos.png)
+![Vista Catalogo/Gestion](captures/gestionProducto.png)
 > *Panel de gestión de productos con configuración de ofertas y carga de imágenes.*
 
 ---
@@ -108,10 +127,10 @@ Al iniciar una venta, el sistema solicita la cédula.
 * Si el cliente existe, carga sus datos.
 * Si es nuevo, despliega el formulario de registro (`DialogoCliente`) con validaciones de teléfono y correo.
 
-![Vista BusquedaCliente](capture\BuscarCliente.png)
+![Vista BusquedaCliente](captures/BuscarCliente.png)
 > *Dialogo de Busqueda  de Clientes con respuesta en tiempo de escritura.*
 
-- ![Vista RegistroCliente](capture\RegistroDeCliente.png)
+- ![Vista RegistroCliente](captures/RegistroDeCliente.png)
 > *Registro de Cliente con sus validaciones competentes para cada campo.*
 ---
 
@@ -121,7 +140,7 @@ Navega por el catálogo visual. Las tarjetas de productos muestran etiquetas int
 * Ajusta cantidades de productos en el carrito (el sistema valida el stock disponible en tiempo real).
 * Se visualiza precio en dolares y bolivares descuentos aplicados y cupones.
 
-![Vista Catalogo/Carrito](capture\Carrito.png)
+![Vista Catalogo/Carrito](captures/Carrito.png)
 > *Carrito de productos y visualizacion de catalogo y stock en tiempo real.*
 
 ---
@@ -131,7 +150,7 @@ Al confirmar, selecciona el método de pago preferido:
 * **Zelle / Pago Móvil:** Requiere validación de referencia.
 * **Punto de Venta / Efectivo:** Flujos simplificados.
 
-![Vista Pago](capture\DialogoPago.png)
+![Vista Pago](captures/DialogoPago.png)
 > *Vista de diferentes tipos de pago en el que se pueden agregar observaciones*
 
 ---
@@ -142,7 +161,7 @@ Al finalizar, se genera un ticket digital detallando:
 * Descuentos aplicados (Ahorro total).
 * Datos fiscales de la empresa y cliente.
 
-![Vista de pedido](capture\ResumenPedido.png)
+![Vista de pedido](captures/ResumenPedido.png)
 
 ---
 ### 6. Historial
@@ -150,14 +169,18 @@ Viualiza los pedidos realizados detallando:
 * Capturas de datos de ese día.
 * Opcion a visualizar el comprobante del pedido.
 
-![Vista Historial](capture\Historial.png)
+![Vista Historial](captures/Historial.png)
 
 ## 📝 Notas Adicionales
 - ⚠️ Permisos: Asegúrate de que la carpeta del proyecto tenga permisos de Lectura/Escritura, ya que la app necesita crear y modificar los archivos `.txt`.
 - 📸 Snapshots: El sistema guarda una "foto instantánea" de los precios y nombres de los productos al momento de la venta. Esto garantiza que el historial no se altere si cambias el catálogo en el futuro.
 - 🗄️ Base de Datos: No requiere MySQL ni PostgreSQL. Todo es portable.
 
-👤 Autor
-- Desarrollado por Manuel Rodriguez/albahir.
+## 👤 Autor
+- Desarrollado por Manuel Rodriguez [albahir](user).
 - 👨‍💻 Desarrollado en Java Swing.
+---
+## 📜 Licencia
+Este proyecto está bajo la licencia [MIT](LICENSE).  
+Puedes usarlo, modificarlo y distribuirlo libremente, siempre que mantengas la atribución al autor.
 
