@@ -16,7 +16,7 @@
 ---
 
 ## 📑 Tabla de Contenidos
-- [Demo](#-demo)
+- [Demo](#demo)
 - [Descripción](#-descripción)
 - [Características Clave](#-características-clave)
 - [Requisitos Previos](#-requisitos-previos)
@@ -30,9 +30,9 @@
 ---
 
 ## Demo 
-![Demo](captures/Grabacin2026-01-25175028-ezgif-com-optimize.gif)
+![Demo](captures/video.gif)
 
-
+---
 
 
 ## 📄 Descripción 
