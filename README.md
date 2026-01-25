@@ -29,6 +29,12 @@
 
 ---
 
+## Demo 
+![Demo](captures/Grabacin2026-01-25175028-ezgif-com-optimize.gif)
+
+
+
+
 ## 📄 Descripción 
 
 Este proyecto es una aplicación de escritorio robusta desarrollada en Java Swing que implementa un sistema de Punto de Venta (POS).  
