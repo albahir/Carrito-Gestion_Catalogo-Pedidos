@@ -1,6 +1,9 @@
 package VistasCatalogo;
 
-
+import java.awt.dnd.*;
+import java.awt.datatransfer.*;
+import java.io.File;
+import java.util.List;
 import Utilidades.*;
 import EntidadesCatalogo.Producto;
 import java.awt.*;
@@ -411,8 +414,47 @@ String[] cats = {
     
    
     private void activarDragAndDrop() {
+        // Creamos un DropTarget que escuche sobre el JLabel de la imagen
+        new DropTarget(lblImagenPreview, new DropTargetAdapter() {
+            @Override
+            public void drop(DropTargetDropEvent dtde) {
+                try {
+                    // Aceptamos la acción de soltar
+                    dtde.acceptDrop(DnDConstants.ACTION_COPY);
+                    
+                    // Obtenemos los archivos transferidos
+                    Transferable transfer = dtde.getTransferable();
+                    List<File> droppedFiles = (List<File>) transfer.getTransferData(DataFlavor.javaFileListFlavor);
+                    
+                    if (droppedFiles != null && !droppedFiles.isEmpty()) {
+                        // Tomamos solo el primer archivo
+                        File file = droppedFiles.get(0);
+                        String name = file.getName().toLowerCase();
+                        
+                        // Validamos que sea una imagen
+                        if (name.endsWith(".jpg") || name.endsWith(".png") || name.endsWith(".jpeg")) {
+                            
+                            // 1. Guardamos la ruta en la variable de clase
+                            rutaImagenActual = file.getAbsolutePath();
+                            
+                            // 2. Actualizamos la vista previa usando tu utilidad
+                            ImageIcon icon = ImagenUtils.cargarImagenEscalada(rutaImagenActual, 110, 110);
+                            lblImagenPreview.setIcon(icon);
+                            lblImagenPreview.setText(""); // Borramos el texto "Subir Foto"
+                            
+                        } else {
+                            // Si no es imagen, mostramos error (usando tu clase de mensajes si es posible, o JOptionPane)
+                            JOptionPane.showMessageDialog(PanelFormulario.this, 
+                                "Solo se permiten archivos de imagen (JPG, PNG).", 
+                                "Archivo no válido", JOptionPane.WARNING_MESSAGE);
+                        }
+                    }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
     }
-
     // --- GETTERS ---
     public String getNombre() { return txtNombre.getText(); }
     public String getPrecio() { return txtPrecio.getText().trim().replace(",", "."); }

@@ -87,8 +87,8 @@ public class TarjetaProducto extends JPanel {
             
             lblInactivo.setBounds(x, yPosEtiqueta, anchoReal, 18);
             add(lblInactivo);
-            setComponentZOrder(lblInactivo, 0); // ¡IMPORTANTE! Traer al frente sobre la foto
-            yPosEtiqueta -= 20; // Si hay otra etiqueta, que se ponga arriba de esta
+            setComponentZOrder(lblInactivo, 0); 
+            yPosEtiqueta -= 20;
         }
         
         // Estado: AGOTADO
@@ -102,7 +102,7 @@ public class TarjetaProducto extends JPanel {
             
             lblAgotado.setBounds(x, yPosEtiqueta, anchoReal, 18);
             add(lblAgotado);
-            setComponentZOrder(lblAgotado, 0); // Traer al frente
+            setComponentZOrder(lblAgotado, 0); 
         }
         // =================================================================
         // 2. BADGES SUPERIORES (Oferta y Mayorista)
@@ -117,6 +117,7 @@ public class TarjetaProducto extends JPanel {
             JLabel lblBadge = UIFabric.crearBadgeCircular("-" + porcentaje + "%", Tema.BADGE_FLASH, Tema.OBSIDIAN, 42);
             lblBadge.setBounds(8, 8, 42, 42); // Posición original
             add(lblBadge);
+            setComponentZOrder(lblBadge, 0);
         }
         
         // B. MAYORISTA (Top-Derecha)
@@ -137,6 +138,7 @@ public class TarjetaProducto extends JPanel {
             
             lblMayoreo.setBounds(x, 12, anchoReal, 20);
             add(lblMayoreo);
+            setComponentZOrder(lblMayoreo, 0);
         }
         // C. BOTÓN AGREGAR (+) 
         // Solo se agrega si NO es admin Y si hay stock (Lógica original simplificada)
@@ -145,6 +147,7 @@ public class TarjetaProducto extends JPanel {
             btnPlus.setBounds(142, 8, 30, 30);
             btnPlus.addActionListener(e -> accionClick.run());
             add(btnPlus);
+            setComponentZOrder(btnPlus, 0);
         }
 
 
@@ -188,7 +191,7 @@ public class TarjetaProducto extends JPanel {
         JLabel lblNombre = new JLabel("<html>" + producto.getNombre() + "</html>");
         lblNombre.setBounds(12, 208, 160, 35);
         lblNombre.setVerticalAlignment(SwingConstants.TOP);
-        lblNombre.setFont(Tema.FUENTE_NORMAL);
+        lblNombre.setFont(Tema.FUENTE_PRECIO.deriveFont(12f));
         lblNombre.setForeground(Tema.TEXTO_OSCURO);
         add(lblNombre);
         
