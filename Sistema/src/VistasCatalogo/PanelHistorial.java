@@ -1,11 +1,11 @@
 package VistasCatalogo;
 
 import AcccesoDatosCatalogo.Busqueda;
-import AcccesoDatosCatalogo.GestionPedidos;
+import Servicios.GestionPedidos;
 import EntidadesCatalogo.Pedido;
-import Utilidades.Formato;
-import Utilidades.Tema;
-import Utilidades.UIFabric;
+import Utilidades.tecnicas.Formato;
+import Utilidades.UI.Tema;
+import Utilidades.UI.UIFabric;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;

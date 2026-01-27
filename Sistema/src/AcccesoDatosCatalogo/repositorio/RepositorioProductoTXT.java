@@ -1,7 +1,7 @@
 package AcccesoDatosCatalogo.repositorio;
 
 import EntidadesCatalogo.Producto;
-import Utilidades.ArchivoHelper;
+import Utilidades.tecnicas.ArchivoHelper;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;

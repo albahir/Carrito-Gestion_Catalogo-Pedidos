@@ -1,7 +1,7 @@
 package AcccesoDatosCatalogo.repositorio;
 
 import EntidadesCatalogo.Cliente;
-import Utilidades.ArchivoHelper;
+import Utilidades.tecnicas.ArchivoHelper;
 import java.util.ArrayList;
 import java.util.List;
 

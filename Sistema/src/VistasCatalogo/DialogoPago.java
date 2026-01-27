@@ -1,13 +1,13 @@
 package VistasCatalogo;
 
-import Utilidades.Formato;
-import Utilidades.Tema;
-import Utilidades.UIFabric;
+import Utilidades.tecnicas.Formato;
+import Utilidades.UI.Tema;
+import Utilidades.UI.UIFabric;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.math.BigDecimal;
-import Utilidades.Validaciones;
+import Utilidades.tecnicas.Validaciones;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;

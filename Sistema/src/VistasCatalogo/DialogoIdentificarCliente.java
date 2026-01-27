@@ -1,8 +1,9 @@
 package VistasCatalogo;
 
-import AcccesoDatosCatalogo.GestionCliente;
+import Utilidades.UI.Tema;
+import Utilidades.tecnicas.Validaciones;
+import Servicios.GestionCliente;
 import EntidadesCatalogo.Cliente;
-import Utilidades.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;

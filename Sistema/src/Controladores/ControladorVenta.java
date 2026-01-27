@@ -1,14 +1,14 @@
 package Controladores;
 
-import AcccesoDatosCatalogo.GestionCliente;
-import AcccesoDatosCatalogo.GestionPedidos;
-import AcccesoDatosCatalogo.GestionProducto;
+import Servicios.GestionCliente;
+import Servicios.GestionPedidos;
+import Servicios.GestionProducto;
 import EntidadesCatalogo.Cliente;
 import EntidadesCatalogo.DetalleCompra;
 import EntidadesCatalogo.Pedido;
 import EntidadesCatalogo.Producto;
 import EntidadesCatalogo.Configuracion;
-import Utilidades.MensajesUI;
+import Utilidades.UI.MensajesUI;
 import VistasCatalogo.DialogoCliente;
 import VistasCatalogo.DialogoIdentificarCliente;
 import VistasCatalogo.DialogoPago;

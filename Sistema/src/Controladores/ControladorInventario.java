@@ -1,8 +1,8 @@
 package Controladores;
 
-import AcccesoDatosCatalogo.GestionProducto;
+import Servicios.GestionProducto;
 import EntidadesCatalogo.Producto;
-import Utilidades.MensajesUI;
+import Utilidades.UI.MensajesUI;
 import VistasCatalogo.PanelCatalogo;
 import VistasCatalogo.PanelFormulario;
 import java.time.LocalDateTime;

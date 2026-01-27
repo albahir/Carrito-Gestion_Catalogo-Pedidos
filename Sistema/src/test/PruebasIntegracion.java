@@ -1,5 +1,8 @@
 package test;
 
+import Servicios.GestionPedidos;
+import Servicios.GestionCliente;
+import Servicios.GestionProducto;
 import AcccesoDatosCatalogo.*;
 import AcccesoDatosCatalogo.descuentos.*;
 import EntidadesCatalogo.*;

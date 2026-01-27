@@ -2,7 +2,7 @@ package AcccesoDatosCatalogo.repositorio;
 
 import AcccesoDatosCatalogo.AlmacenamientoPedidos;
 import EntidadesCatalogo.*;
-import Utilidades.ArchivoHelper;
+import Utilidades.tecnicas.ArchivoHelper;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;

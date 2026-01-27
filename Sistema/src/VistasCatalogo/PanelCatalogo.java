@@ -1,9 +1,9 @@
 package VistasCatalogo;
 
-import Utilidades.Tema;
-import AcccesoDatosCatalogo.GestionProducto;
+import Utilidades.UI.Tema;
+import Servicios.GestionProducto;
 import EntidadesCatalogo.Producto;
-import Utilidades.UIFabric;
+import Utilidades.UI.UIFabric;
 import java.awt.*;
 import java.text.Normalizer;
 import java.util.ArrayList;

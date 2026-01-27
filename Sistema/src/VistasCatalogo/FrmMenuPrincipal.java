@@ -1,6 +1,11 @@
 package VistasCatalogo;
 
-import Utilidades.*;
+import Utilidades.UI.Tema;
+import Utilidades.UI.UIFabric;
+import Utilidades.UI.PanelRedondeado;
+import Servicios.GestionPedidos;
+import Servicios.GestionCliente;
+import Servicios.GestionProducto;
 import Controladores.ControladorVenta;
 import Controladores.ControladorInventario;
 import javax.swing.border.LineBorder;

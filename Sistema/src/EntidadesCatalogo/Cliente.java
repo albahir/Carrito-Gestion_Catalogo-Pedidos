@@ -1,6 +1,6 @@
 package EntidadesCatalogo;
 
-import Utilidades.Validaciones;
+import Utilidades.tecnicas.Validaciones;
 
 public class Cliente {
     

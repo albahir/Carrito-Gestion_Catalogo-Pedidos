@@ -1,7 +1,11 @@
 package VistasCatalogo;
 
-import Utilidades.*;
-import Utilidades.UIFabric;
+import Utilidades.UI.ImagenUtils;
+import Utilidades.UI.Tema;
+import Utilidades.UI.PanelRedondeado;
+import Utilidades.tecnicas.Formato;
+import Utilidades.tecnicas.Validaciones;
+import Utilidades.UI.UIFabric;
 import EntidadesCatalogo.Cliente;
 import EntidadesCatalogo.DetalleCompra;
 import EntidadesCatalogo.Pedido;

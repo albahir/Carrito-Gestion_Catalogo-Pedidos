@@ -1,10 +1,13 @@
 package VistasCatalogo;
 
+import Utilidades.UI.Tema;
+import Utilidades.UI.ImagenUtils;
+import Utilidades.UI.UIFabric;
+import Utilidades.tecnicas.Formato;
 import java.awt.event.ActionListener; 
 import java.time.Duration; 
 import java.time.LocalDateTime;
 import javax.swing.Timer;
-import Utilidades.*;
 import EntidadesCatalogo.Producto;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
