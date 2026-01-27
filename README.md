@@ -16,7 +16,7 @@
 ---
 
 ## 📑 Tabla de Contenidos
-- [Demo](#-demo)
+- [Demo](#demo)
 - [Descripción](#-descripción)
 - [Características Clave](#-características-clave)
 - [Requisitos Previos](#-requisitos-previos)
@@ -28,6 +28,12 @@
 - [Licencia](#-licencia)
 
 ---
+
+## Demo 
+![Demo](captures/video.gif)
+
+---
+
 
 ## 📄 Descripción 
 
