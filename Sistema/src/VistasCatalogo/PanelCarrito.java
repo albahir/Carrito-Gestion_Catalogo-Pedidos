@@ -442,140 +442,155 @@ contenedorItems.repaint();
     }
 
     // --- DISEÑO DE LA FILA (ITEM DEL CARRITO) ---
-    private JPanel crearFilaItem(DetalleCompra det, int index) {
-      // Usamos nuestro PanelRedondeado de utilidades
-        PanelRedondeado card = new PanelRedondeado(Color.WHITE, 20);
-        card.setLayout(new BorderLayout(10, 0)); 
-        card.setMaximumSize(new Dimension(2000, 80));
-        card.setBorder(new EmptyBorder(8, 8, 8, 12));
-         
-        // 1. IMAGEN
-        JLabel lblImg = new JLabel();
-        lblImg.setPreferredSize(new Dimension(70, 70));
-        lblImg.setHorizontalAlignment(SwingConstants.CENTER);
-        ImageIcon icon = ImagenUtils.cargarImagenEscalada(det.getProducto().getRutaImagen(), 60, 60);
-        if (icon != null) lblImg.setIcon(icon);
-        else lblImg.setText("📷");
-        
-        // 2. INFO CENTRO
-        JPanel centro = new JPanel(new GridLayout(3, 1));
-        centro.setOpaque(false); 
-        
-        JLabel lblNombre = new JLabel(det.getProducto().getNombre());
-        lblNombre.setFont(new Font("Segoe UI", Font.BOLD, 13));
-        
-        JPanel pBadges = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
-        pBadges.setOpaque(false);
-        Producto p = det.getProducto();
-        
-       int stockTotal = p.getStock();
+ // --- DISEÑO DE LA FILA (ITEM DEL CARRITO) ---
+private JPanel crearFilaItem(DetalleCompra det, int index) {
+    // Usamos nuestro PanelRedondeado de utilidades
+    PanelRedondeado card = new PanelRedondeado(Color.WHITE, 20);
+    card.setLayout(new BorderLayout(10, 0)); 
+    // Aumentamos un poco la altura máxima para que quepan las etiquetas apiladas si es necesario
+    card.setMaximumSize(new Dimension(2000, 115)); 
+    card.setBorder(new EmptyBorder(8, 8, 8, 12));
+     
+    // 1. IMAGEN
+    JLabel lblImg = new JLabel();
+    lblImg.setPreferredSize(new Dimension(70, 70));
+    lblImg.setHorizontalAlignment(SwingConstants.CENTER);
+    ImageIcon icon = ImagenUtils.cargarImagenEscalada(det.getProducto().getRutaImagen(), 60, 60);
+    if (icon != null) lblImg.setIcon(icon);
+    else lblImg.setText("📷");
+    
+    // 2. INFO CENTRO
+    // Cambiamos GridLayout a GridBagLayout o BoxLayout para mejor control de altura, 
+    // pero mantenemos GridLayout(3,1) simplificado ajustando el panel de badges.
+    JPanel centro = new JPanel(new GridLayout(3, 1));
+    centro.setOpaque(false); 
+    
+    JLabel lblNombre = new JLabel(det.getProducto().getNombre());
+    lblNombre.setFont(new Font("Segoe UI", Font.BOLD, 13));
+    
+    // --- ZONA DE BADGES (Modificada) ---
+    JPanel pBadges = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
+    pBadges.setOpaque(false);
+    Producto p = det.getProducto();
+    
+    // A. Badge de Stock (Izquierda)
+    int stockTotal = p.getStock();
     int enCarrito = det.getCantidad();
     int restantes = stockTotal - enCarrito;
     
-    // Creamos la etiqueta
     JLabel badgeStock = new JLabel();
     badgeStock.setOpaque(true);
     badgeStock.setFont(new Font("Segoe UI", Font.BOLD, 10));
     badgeStock.setBorder(new EmptyBorder(2, 5, 2, 5));
 
     if (restantes <= 0) {
-        // CASO 1: YA NO QUEDA NADA MÁS
-        badgeStock.setText("¡Máximo!"); // O "Agotado"
-        badgeStock.setBackground(new Color(255, 235, 238)); // Fondo Rojo suave
-        badgeStock.setForeground(new Color(231, 76, 60));   // Texto Rojo
+        badgeStock.setText("¡Máximo!"); 
+        badgeStock.setBackground(new Color(255, 235, 238)); 
+        badgeStock.setForeground(new Color(231, 76, 60));   
     } else {
-        
-        // CASO 2: AÚN PUEDES AGREGAR MÁS
         badgeStock.setText("Quedan: " + restantes);
-        badgeStock.setBackground(new Color(240, 240, 245)); // Gris
+        badgeStock.setBackground(new Color(240, 240, 245)); 
         badgeStock.setForeground(Color.GRAY);
     }
+    // Alineación vertical para que el stock quede centrado respecto a los descuentos
+    badgeStock.setAlignmentY(Component.CENTER_ALIGNMENT); 
 
     pBadges.add(badgeStock);
-    pBadges.add(Box.createHorizontalStrut(5));
-        // 1. Badge Oferta Flash
-if (p.isEnOfertaFlash()) {
-    JLabel badgeFlash = new JLabel("FLASH");
-    badgeFlash.setOpaque(true);
-    badgeFlash.setBackground(new Color(255, 152, 0)); // Naranja
-    badgeFlash.setForeground(Color.WHITE);
-    badgeFlash.setFont(new Font("Segoe UI", Font.BOLD, 12));
-    badgeFlash.setBorder(new EmptyBorder(2, 5, 2, 5));
-    pBadges.add(badgeFlash);
-    pBadges.add(Box.createHorizontalStrut(5));
-}
+    pBadges.add(Box.createHorizontalStrut(8)); // Espacio entre Stock y Descuentos
 
-// 2. Badge Mayoreo
-if (p.isTieneDescuentoVolumen() && det.getCantidad() >= p.getCantidadParaDescuento()) {
-    pBadges.add(Box.createHorizontalStrut(5));
-   String txtMayoreo = "MAYOR-" + (int)p.getPorcentajeDescuentoVolumen() + "%"; 
-            pBadges.add(UIFabric.crearBadge(txtMayoreo, Tema.BADGE_MAYORISTA, Color.WHITE));
+    // B. Panel Vertical para Descuentos (Aquí está el truco)
+    JPanel pDescuentosVertical = new JPanel();
+    pDescuentosVertical.setLayout(new BoxLayout(pDescuentosVertical, BoxLayout.Y_AXIS));
+    pDescuentosVertical.setOpaque(false);
     
-}
+    // 1. Badge Oferta Flash (Arriba)
+    if (p.isEnOfertaFlash()) {
+        JLabel badgeFlash = new JLabel("FLASH");
+        badgeFlash.setOpaque(true);
+        badgeFlash.setBackground(new Color(255, 152, 0)); // Naranja
+        badgeFlash.setForeground(Color.WHITE);
+        badgeFlash.setFont(new Font("Segoe UI", Font.BOLD, 10)); // Fuente un poco más chica para que quepa bien
+        badgeFlash.setBorder(new EmptyBorder(1, 4, 1, 4));
+        badgeFlash.setAlignmentX(Component.LEFT_ALIGNMENT); // Alinear a la izquierda del contenedor vertical
         
-       double precioOriginal = det.getProducto().getPrecio();
-double precioPagado = det.getProducto().getPrecio(); // Por defecto
+        pDescuentosVertical.add(badgeFlash);
+        // Pequeño espacio vertical por si aparece el de mayoreo abajo
+        pDescuentosVertical.add(Box.createVerticalStrut(2)); 
+    }
 
-// Si es oferta flash, el precio unitario real baja
-if (det.getProducto().isEnOfertaFlash()) {
-    precioPagado = det.getProducto().getPrecioOferta();
-}
-
-// FORMATO DE PRECIO UNITARIO (Centro)
-
-
-JLabel lblUnitario = new JLabel(Formato.precioTachado(precioOriginal, precioPagado));
-lblUnitario.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-        lblUnitario.setForeground(Color.GRAY);
-
-        centro.add(lblNombre);
-        centro.add(pBadges);
-        centro.add(lblUnitario);
-
-        // 3. CONTROLES (Derecha)
-        JPanel derecha = new JPanel(new BorderLayout());
-        derecha.setOpaque(false);
-        
-        JLabel lblSubtotal = new JLabel(Formato.dinero(det.getSubTotal()));
-        lblSubtotal.setFont(new Font("Segoe UI", Font.BOLD, 14));
-        lblSubtotal.setForeground(Tema.OBSIDIAN);
-        lblSubtotal.setHorizontalAlignment(SwingConstants.RIGHT);
-        
-        JPanel btns = new JPanel(new FlowLayout(FlowLayout.RIGHT, 4, 0)); // Más espacio entre botones
-        btns.setOpaque(false);
-        
+    // 2. Badge Mayoreo (Abajo)
+    if (p.isTieneDescuentoVolumen() && det.getCantidad() >= p.getCantidadParaDescuento()) {
+        String txtMayoreo = "MAYOR-" + (int)p.getPorcentajeDescuentoVolumen() + "%"; 
+        JLabel badgeMayoreo = UIFabric.crearBadge(txtMayoreo, Tema.BADGE_MAYORISTA, Color.WHITE);
+        badgeMayoreo.setFont(new Font("Segoe UI", Font.BOLD, 10)); // Ajustar fuente
+        badgeMayoreo.setAlignmentX(Component.LEFT_ALIGNMENT);
       
-        JButton btnMenos = UIFabric.crearBotonIcono("-");
-        btnMenos.addActionListener(e -> { if(accionModificarCantidad!=null) accionModificarCantidad.accept(index, -1); });
-        
-        JLabel lblCant = new JLabel(String.valueOf(det.getCantidad()));
-        lblCant.setPreferredSize(new Dimension(25, 24));
-        lblCant.setHorizontalAlignment(SwingConstants.CENTER);
-        lblCant.setFont(new Font("Segoe UI", Font.BOLD, 13));
-        
-        JButton btnMas = UIFabric.crearBotonIcono("+");
-        btnMas.addActionListener(e -> { if(accionModificarCantidad!=null) accionModificarCantidad.accept(index, 1); });
+        pDescuentosVertical.add(badgeMayoreo);
          
-        JButton btnDel = UIFabric.crearBotonIcono("X");
-        // El de eliminar lo hacemos un poco rojizo al pasar el mouse (opcional) o mantener lavanda
-        btnDel.addActionListener(e -> { if(accionEliminar!=null) accionEliminar.accept(index); });
-
-        btns.add(btnMenos);
-        btns.add(lblCant);
-        btns.add(btnMas);
-        btns.add(Box.createHorizontalStrut(8));
-        btns.add(btnDel);
-        
-        derecha.add(lblSubtotal, BorderLayout.NORTH);
-        derecha.add(btns, BorderLayout.SOUTH);
-
-        card.add(lblImg, BorderLayout.WEST);
-        card.add(centro, BorderLayout.CENTER);
-        card.add(derecha, BorderLayout.EAST);
-
-        return card;
     }
     
+    // Agregamos el panel vertical (que contiene Flash y/o Mayoreo) al panel horizontal principal
+    pBadges.add(pDescuentosVertical);
+    
+
+    // --- FIN ZONA BADGES ---
+    
+    double precioOriginal = det.getProducto().getPrecio();
+    double precioPagado = det.getProducto().getPrecio(); 
+
+    if (det.getProducto().isEnOfertaFlash()) {
+        precioPagado = det.getProducto().getPrecioOferta();
+    }
+
+    JLabel lblUnitario = new JLabel(Formato.precioTachado(precioOriginal, precioPagado));
+    lblUnitario.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+    lblUnitario.setForeground(Color.GRAY);
+
+    centro.add(lblNombre);
+    centro.add(pBadges);
+    centro.add(lblUnitario);
+
+    // 3. CONTROLES (Derecha) - Igual que antes
+    JPanel derecha = new JPanel(new BorderLayout());
+    derecha.setOpaque(false);
+    
+    JLabel lblSubtotal = new JLabel(Formato.dinero(det.getSubTotal()));
+    lblSubtotal.setFont(new Font("Segoe UI", Font.BOLD, 14));
+    lblSubtotal.setForeground(Tema.OBSIDIAN);
+    lblSubtotal.setHorizontalAlignment(SwingConstants.RIGHT);
+    
+    JPanel btns = new JPanel(new FlowLayout(FlowLayout.RIGHT, 4, 0)); 
+    btns.setOpaque(false);
+    
+    JButton btnMenos = UIFabric.crearBotonIcono("-");
+    btnMenos.addActionListener(e -> { if(accionModificarCantidad!=null) accionModificarCantidad.accept(index, -1); });
+    
+    JLabel lblCant = new JLabel(String.valueOf(det.getCantidad()));
+    lblCant.setPreferredSize(new Dimension(25, 24));
+    lblCant.setHorizontalAlignment(SwingConstants.CENTER);
+    lblCant.setFont(new Font("Segoe UI", Font.BOLD, 13));
+    
+    JButton btnMas = UIFabric.crearBotonIcono("+");
+    btnMas.addActionListener(e -> { if(accionModificarCantidad!=null) accionModificarCantidad.accept(index, 1); });
+        
+    JButton btnDel = UIFabric.crearBotonIcono("X");
+    btnDel.addActionListener(e -> { if(accionEliminar!=null) accionEliminar.accept(index); });
+
+    btns.add(btnMenos);
+    btns.add(lblCant);
+    btns.add(btnMas);
+    btns.add(Box.createHorizontalStrut(8));
+    btns.add(btnDel);
+    
+    derecha.add(lblSubtotal, BorderLayout.NORTH);
+    derecha.add(btns, BorderLayout.SOUTH);
+
+    card.add(lblImg, BorderLayout.WEST);
+    card.add(centro, BorderLayout.CENTER);
+    card.add(derecha, BorderLayout.EAST);
+
+    return card;
+}
     
     
 

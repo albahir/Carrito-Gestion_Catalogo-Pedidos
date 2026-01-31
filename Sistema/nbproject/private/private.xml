@@ -6,8 +6,11 @@
             <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/descuentos/ReglaFidelidad.java</file>
             <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/Producto.java</file>
             <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/VistasCatalogo/PanelCatalogo.java</file>
-            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/GestionPedidos.java</file>
-            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/GestionProducto.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Servicios/GestionPedidos.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Servicios/GestionProducto.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/EntidadesCatalogo/Configuracion.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/AcccesoDatosCatalogo/descuentos/ReglaDescuento.java</file>
+            <file>file:/C:/java/Sistema%20de%20Catalogo/Sistema/src/Utilidades/tecnicas/ArchivoHelper.java</file>
         </group>
     </open-files>
 </project-private>
