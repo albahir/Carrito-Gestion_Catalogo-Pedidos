@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 ![Repo Size](https://img.shields.io/github/repo-size/albahir/Carrito-Gestion_Catalogo-Pedidos?style=for-the-badge)
 ![Commits](https://img.shields.io/github/commit-activity/m/albahir/Carrito-Gestion_Catalogo-Pedidos?style=for-the-badge)
-![Última actualización](https://img.shields.io/github/last-commit/albahir/Carrito-Gestion_Catalogo-Pedidos?style=Actualizado)
+![Última actualización](https://img.shields.io/github/last-commit/albahir/Carrito-Gestion_Catalogo-Pedidos?style=for-the-badge)
 
 
 
